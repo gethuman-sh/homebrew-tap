@@ -5,21 +5,21 @@
 class Human < Formula
   desc "Issue tracker CLI for AIs"
   homepage "https://github.com/StephanSchmidt/human"
-  version "0.6.0"
+  version "0.8.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/StephanSchmidt/human/releases/download/v0.6.0/human_0.6.0_darwin_amd64.tar.gz"
-      sha256 "44d2c5cda4730496d39b2b1775411b44c891c68dcd9e11c120cbd1d49ae6b4c1"
+      url "https://github.com/StephanSchmidt/human/releases/download/v0.8.0/human_0.8.0_darwin_amd64.tar.gz"
+      sha256 "d57271653915a46238536887ca3f29be8f92d8a0047216753b43dd60b0b777ce"
 
       define_method(:install) do
         bin.install "human"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/StephanSchmidt/human/releases/download/v0.6.0/human_0.6.0_darwin_arm64.tar.gz"
-      sha256 "393dacc003be96e1ecaccbf336bf1888f8d020e22304406e46b7719174bb3679"
+      url "https://github.com/StephanSchmidt/human/releases/download/v0.8.0/human_0.8.0_darwin_arm64.tar.gz"
+      sha256 "03212469bcf52f6e33e9fca0f6690b6b065aaec3baf299749b75885526e406f6"
 
       define_method(:install) do
         bin.install "human"
@@ -29,15 +29,15 @@ class Human < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/StephanSchmidt/human/releases/download/v0.6.0/human_0.6.0_linux_amd64.tar.gz"
-      sha256 "9c5645ecbccc8bf92a196e45b1868589045228849e2b99cc5a8256a44545781f"
+      url "https://github.com/StephanSchmidt/human/releases/download/v0.8.0/human_0.8.0_linux_amd64.tar.gz"
+      sha256 "603c41633d66b916bfc8c93f4b85938a39b46ebac131dc33da2e58146b994cba"
       define_method(:install) do
         bin.install "human"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/StephanSchmidt/human/releases/download/v0.6.0/human_0.6.0_linux_arm64.tar.gz"
-      sha256 "6523e2dde7334b280a243be2f5e6a5413184ee3172536ce6c10d5d54c87fee92"
+      url "https://github.com/StephanSchmidt/human/releases/download/v0.8.0/human_0.8.0_linux_arm64.tar.gz"
+      sha256 "0681b77269d5f9bf12816777031077d64a3bf866245ec0d5e071b08b751b05a7"
       define_method(:install) do
         bin.install "human"
       end
